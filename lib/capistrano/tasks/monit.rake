@@ -72,7 +72,7 @@ namespace :monit do
     desc "Run Monit #{command} script"
     task command do
       on roles :app do
-        execute :sudo, "service monit #{command}"
+        execute :sudo, "monit #{command}"
       end
     end
   end
